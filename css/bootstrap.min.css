@@ -179,10 +179,10 @@ figure {
     margin: 0 0 1rem
 }
 
-img {
+/* img {
     vertical-align: middle;
     border-style: none
-}
+} */
 
 svg {
     overflow: hidden;
@@ -1210,7 +1210,7 @@ pre code {
     .col-md-12 {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
-        max-width: 100%
+        max-width:100%
     }
 
     .order-md-first {
@@ -10144,7 +10144,8 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 }
 
 .text-center {
-    text-align: center!important
+    text-align: center!important;
+    /* align-items: center; */
 }
 
 @media (min-width: 576px) {

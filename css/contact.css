@@ -1,0 +1,53 @@
+/* body{
+    background-image: url('/img/slider/slider_img05.png');
+} */
+
+.map-section {
+    margin-top: 110px; /* Space above the map */
+    margin-bottom: 50px;
+    text-align: center; /* Center the title */
+}
+.map-section .container{
+ max-width: 1500px; 
+}
+
+.map-section h2 {
+    margin-bottom: 50px; 
+    font-size: 28px; /* Increased title font size */
+    color: #333; /* Title color */
+    font-weight: bold; /* Bold title */
+}
+
+.map {
+    margin: 0 auto; /* Center the map container */
+    max-width: 100%; /* Ensure the map doesn't exceed the width */
+}
+
+.floating:hover {
+    background-color: #128C7E; /* Darker green on hover */
+}
+
+
+
+   /* Add WA floating button CSS */
+   .floating {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    top:  430px;
+    right: 20px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+   }
+   
+   .fab-icon {
+    margin-top: 15px;
+   }
+.findUs{
+    margin-top: 20px;
+}

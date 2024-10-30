@@ -1,0 +1,77 @@
+/* Container for bottle and list */
+.bottle-container {
+    display: flex;
+    justify-content: flex-start; /* Align bottle to the left */
+    align-items: flex-end;
+    margin-top: 20px;
+    height: auto;
+}
+
+.bottle img {
+    width: 100%; /* Bottle takes the full width available */
+    max-width: 600px; /* Maximum width to maintain scale */
+    height: auto;
+    transition: transform 0.5s ease; /* Smooth transition for scaling */
+    cursor: pointer;
+}
+
+/* List items with slide-in effect from right */
+.sr-tw-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sr-tw-ul .list-item {
+    opacity: 0; /* Start hidden */
+    transform: translateX(50%); /* Start off to the right */
+    animation: slideInRight 1s forwards; /* Slide in from right */
+    margin-bottom: 20px;
+}
+
+/* Keyframes for slide-in animation */
+@keyframes slideInRight {
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Slide into place */
+    }
+}
+
+/* Keyframes for pulsing */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1); /* Original size */
+    }
+    50% {
+        transform: scale(1.1); /* Scale up to 110% */
+    }
+}
+
+/* Add pulsing effect on hover */
+.bottle img:hover {
+    animation: pulse 1s forwards; /* Apply the pulse animation just once on hover */
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Responsive styling */
+@media (max-width: 992px) {
+    .bottle img {
+        max-width: 250px; /* Adjust size for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .bottle img {
+        max-width: 200px; /* Adjust size for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .bottle img {
+        max-width: 150px; /* Adjust size for mobile devices */
+    }
+
+    .sr-tw-ul {
+        text-align: center; /* Center the list on smaller screens */
+    }
+}

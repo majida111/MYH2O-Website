@@ -95,7 +95,7 @@ a:focus, a:hover, .portfolio-cat a:hover, .footer -menu li a:hover {
 }
 
 a, button {
-    color: #b3b3b3;
+    color: #2b2a2a;
     outline: medium none;
 }
 
@@ -124,7 +124,7 @@ button:focus,input:focus,input:focus,textarea,textarea:focus {
     text-transform: capitalize;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
     font-family: 'Rubik', sans-serif;
     color: #010f2e;
     margin-top: 0px;
@@ -630,10 +630,10 @@ label {
     font-weight: 500;
 }
 
-.slider-btn {
+/* .slider-btn {
     display: inline-block;
     position: relative;
-}
+} */
 
 .slider-active .slick-dots {
     position: absolute;
@@ -1454,7 +1454,7 @@ label {
 }
 
 .about-title h2 {
-    font-size: 60px;
+    font-size: 40px;
     margin-bottom: 0 !important;
 }
 
@@ -2787,7 +2787,7 @@ section:hover .section-title h2::before {
     padding-top: 35px;
 }
 
-.s-video-wrap {
+/* .s-video-wrap {
     background-position: center;
     background-size: cover;
     width: 800px;
@@ -2840,7 +2840,7 @@ section:hover .section-title h2::before {
     font-size: 18px;
     color: #fff;
     margin-bottom: 0;
-}
+} */
 
 /* 8. choose */
 .chosse-img {
@@ -5030,6 +5030,7 @@ section:hover .section-title h2::before {
 .footer-bg {
     color: #f5f5f5b3;
     background-position: center 0 !important;
+    margin-top: 550px;
 }
 
 .f-cta-area.gray-bg {
@@ -6832,10 +6833,10 @@ pre cite {
     }
 }
 
-.img, img {
+/* .img, img {
     max-width: 100%;
     transition: all 0.3s ease-out 0s;
-}
+} */
 
 .pro-filter select {
     border: 2px solid #eaedff;
@@ -7995,61 +7996,63 @@ p.checkout-coupon input[type="text"] {
     -ms-transform: scale(1, 1);
     transform: scale(1, 1);
 }
-
+.text-center{
+    align-content: center;
+}
 /*=== Brochures Box ===*/
-.brochures-box {
-    position: relative;
-    margin-bottom: 50px;
-}
+    /* .brochures-box {
+        position: relative;
+        margin-bottom: 50px;
+    }
 
-.brochures-box .inner {
-    position: relative;
-    background-color: #2a2e48;
-    padding: 35px 30px 25px;
-}
+    .brochures-box .inner {
+        position: relative;
+        background-color: #2a2e48;
+        padding: 35px 30px 25px;
+    }
 
-.brochures-box h4 {
-    display: block;
-    font-size: 17px;
-    line-height: 1.2em;
-    color: #ffffff;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
+    .brochures-box h4 {
+        display: block;
+        font-size: 17px;
+        line-height: 1.2em;
+        color: #ffffff;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
 
-.brochures-box .text {
-    font-size: 15px;
-    line-height: 23px;
-    color: #ffffff;
-    margin-bottom: 20px;
-}
+    .brochures-box .text {
+        font-size: 15px;
+        line-height: 23px;
+        color: #ffffff;
+        margin-bottom: 20px;
+    }
 
-.brochures-box .theme-btn {
-    font-size: 14px;
-    line-height: 20px;
-    padding: 8px 20px;
-    display: block;
-    width: 100%;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    color: #fff;
-}
+    .brochures-box .theme-btn {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 8px 20px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        color: #fff;
+    }
 
-.brochures-box .theme-btn i {
-    margin-right: 3px;
-}
+    .brochures-box .theme-btn i {
+        margin-right: 3px;
+    }
 
-.btn-style-one {
-    position: relative;
-    font-size: 16px;
-    line-height: 20px;
-    color: #ffffff;
-    background-color: #cb212a;
-    padding: 15px 35px;
-    font-weight: 600;
-    overflow: hidden;
-}
+    .btn-style-one {
+        position: relative;
+        font-size: 16px;
+        line-height: 20px;
+        color: #ffffff;
+        background-color: #cb212a;
+        padding: 15px 35px;
+        font-weight: 600;
+        overflow: hidden;
+    } */
 
 /*Help Box*/
 .help-box {
@@ -8136,6 +8139,8 @@ p.checkout-coupon input[type="text"] {
 .service-detail .content-box {
     position: relative;
     padding: 0px 0 0;
+   
+    
 }
 
 .service-detail .content-box h2 {
@@ -8155,13 +8160,24 @@ p.checkout-coupon input[type="text"] {
     color: #343a40;
     margin-bottom: 20px;
 }
-
-.service-detail .content-box p {
+/* .service-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+/* .service-detail .content-box p  {
     position: relative;
     display: block;
     margin-bottom: 25px;
+   
+} */
+#services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
 .service-detail .two-column {
     position: relative;
 }

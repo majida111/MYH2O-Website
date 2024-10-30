@@ -1,0 +1,21 @@
+.footer-bg {
+    /* padding: 20px 0; */
+    color: #fff; /* Text color for footer */
+    position:relative; 
+}
+
+.footer-widget h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-widget p {
+    margin: 0;
+    line-height: 1.6;
+}
+.copyright-wrap {
+    /* background-color: rgba(0, 0, 0, 0.7);  */
+    /* padding: 10px 0; */
+    position:relative; /* Position relative to keep it at the bottom */
+    text-align: center; /* Center text in copyright */
+}
