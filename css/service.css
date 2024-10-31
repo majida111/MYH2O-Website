@@ -1,0 +1,118 @@
+.centered-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 140px;
+    height: 520px;
+    overflow: hidden;
+    flex-direction: column; /* Ensure items stack vertically */
+    opacity: 0.9;
+}
+
+/* Content styling */
+.content {
+    font-family: 'Lobster', cursive; /* Chosen font */
+    font-size: 20px; /* Adjust as needed */
+    color: white;
+    text-align: left;
+    max-width: 400px; /* Limit width to fit neatly on the left */
+    position: absolute; 
+    left: 270px; 
+    bottom: 5%;
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    z-index: 2; /* Ensure content is above background */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: dark overlay for readability */
+    padding: 10px;
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+/* Water splash background image */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure image covers the area */
+    z-index: 1; /* Set behind the content */
+}
+
+#slide-in-section {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    padding: 50px 20px; /* Add some padding */
+    
+}
+
+.image-container {
+    overflow: hidden; /* Hide overflow for smooth animation */
+}
+
+.slide-in-image {
+    width: 100%; /* Full width for responsive */
+    height: auto; /* Maintain aspect ratio */
+    transform: translateX(100%); /* Start off-screen to the right */
+    animation: slideIn 1s forwards; /* Slide-in animation */
+}
+
+.text-container {
+    flex: 1; /* Allow text to take remaining space */
+    text-align: left; /* Align text to the left */
+    padding-right: 20px; /* Space between text and image */
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #0b0a0a; /* Customize color as needed */
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #100f0f; /* Customize color as needed */
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+    to {
+        transform: translateX(0); /* Slide into view */
+    }
+}
+
+/* Responsive design for smaller devices */
+@media (max-width: 768px) {
+    #slide-in-section {
+        flex-direction: column; /* Stack items on smaller screens */
+        align-items: center; /* Center items */
+        text-align: center; /* Center text */
+    }
+
+    .slide-in-image {
+        width: 80%; /* Image width on smaller screens */
+        margin-bottom: 20px; /* Space below the image */
+    }
+
+    h2 {
+        font-size: 24px; /* Adjust heading size */
+    }
+
+    p {
+        font-size: 14px; /* Adjust paragraph size */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px; /* Smaller heading size */
+    }
+
+    p {
+        font-size: 12px; /* Smaller paragraph size */
+    }
+
+    #slide-in-section {
+        padding: 30px 10px; /* Reduce padding on smaller screens */
+    }
+}

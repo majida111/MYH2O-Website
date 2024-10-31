@@ -1,0 +1,170 @@
+/* Centered image structure */
+.centered-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 90px;
+  height: 600px;
+  overflow: hidden;
+  flex-direction: column; /* Ensure items stack vertically */
+}
+
+/* Heading styling */
+.heading {
+  font-family: "Great Vibes", cursive; /* Change to chosen font */
+  font-size: 68px; /* Adjust as needed */
+  text-align: center;
+  margin-top: 40px;
+  z-index: 5;
+  color: white;
+}
+.content {
+  font-family: "Lobster", cursive;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 456px;
+  z-index: 6;
+  color: white;
+  background: #444;
+  padding: 4px 20px;
+}
+
+/* Certification image styling */
+.certification-image {
+  position: absolute;
+  top: 10%; /* Adjust as necessary */
+  left: 75%;
+  width: 35%;
+  max-width: 350px;
+  height: auto;
+  z-index: 4;
+  opacity: 0.6;
+}
+
+/* Background image (Water splash) */
+.background-image {
+  width: 100%;
+  max-width: 1650px;
+  height: 500px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  animation: moveBackground 12s ease-in-out infinite;
+}
+
+/* Overlay image (Bottle) */
+.overlay-image {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  max-width: 650px;
+  z-index: 3;
+}
+
+/* Moving bubbles container */
+.bubble-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+/* Moving bubbles styling */
+.floating-bubble {
+  position: absolute;
+  width: 995px;
+  height: auto;
+  animation: floatBubble 10s ease-in-out infinite;
+  opacity: 0.3;
+}
+
+/* Different bubble positions */
+.floating-bubble1 {
+  left: 10%;
+}
+.floating-bubble2 {
+  right: 65%;
+}
+.floating-bubble3 {
+  left: 55%;
+}
+.floating-bubble4 {
+  right: 10%;
+}
+
+/* Bubble animation for upward floating effect */
+@keyframes floatBubble {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Animation for moving the background image */
+@keyframes moveBackground {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.whatsapp-button {
+  position: absolute; /* Fixed position */
+  left: 20px; /* Distance from the right */
+  top: 50%; /* Center vertically on the page */
+  transform: translateY(-50%); /* Adjust to truly center vertically */
+  z-index: 1000; /* Ensure it stays above other elements */
+  writing-mode: vertical-rl; /* Vertical text from left to right */
+  text-align: center; /* Center align the text */
+  color: #25d366; /* WhatsApp icon color */
+  text-decoration: none; /* Remove underline from link */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.whatsapp-button:hover {
+  color: #128c7e; /* Darker WhatsApp color on hover */
+}
+
+.whatsapp-button svg {
+  margin-bottom: 10px; /* Space between icon and text */
+}
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .background-image,
+  .overlay-image {
+    width: 80%;
+  }
+
+  .centered-image {
+    margin-top: 100px;
+    height: 400px;
+  }
+
+  .floating-bubble {
+    width: 100px;
+  }
+
+  .certification-image {
+    width: 25%;
+    top: 10%;
+    left: 5%;
+  }
+
+  .heading {
+    font-size: 36px; /* Reduce font size for smaller screens */
+  }
+}

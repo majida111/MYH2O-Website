@@ -1,0 +1,64 @@
+#contact-section {
+    padding: 50px 20px;
+   
+}
+
+.contact-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.location-img {
+    width: 100%; /* Set width for the image */
+    height: auto;
+    max-width: 850px; /* Set max width for larger screens */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.contact-details {
+    flex: 1; /* Allow the content to take remaining space */
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #131313; /* Customize color as needed */
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: black; /* Customize color as needed */
+}
+
+/* Responsive design for smaller devices */
+@media (max-width: 768px) {
+    .location-img {
+        width: 100%; /* Image takes full width on smaller screens */
+        margin: 0 0 20px 0; /* Margin for spacing */
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    #contact-section {
+        padding: 30px 10px; /* Reduce padding on smaller screens */
+    }
+}
